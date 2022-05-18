@@ -1,0 +1,18 @@
+.jumbotron {
+  background-color: rgb(172, 34, 252);
+  color: white;
+  padding: 35px;
+  margin-bottom: 5px;
+}
+.footer {
+  background-color: rgb(220, 160, 255);
+  padding-top: 20px;
+}
+.row {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.justify-content-center {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
