@@ -31,3 +31,18 @@ body {
 .navbar-dark {
   background-color: #512da8;
 }
+.yellow {
+  background-color: #ffc518;
+}
+ .form{
+   margin-top: 10vh;
+ }
+
+ .center {
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .second {
+   margin-left: 1vh;
+ }
