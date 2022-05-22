@@ -269,10 +269,7 @@
                           role="group"
                           aria-label="Basic example"
                         >
-                          <button
-                            type="button"
-                            class="btn btn-success"
-                          >
+                          <button type="button" class="btn btn-success">
                             NoSmoking
                           </button>
                           <button type="button" class="btn btn-danger">
@@ -417,23 +414,32 @@
             >
               <span class="carousel-control-next-icon"></span>
             </a>
+            <div class="btn-group" id="carouselButton">
+              <button class="btn btn-danger btn-sm" id="carousel-pause">
+                <span class="fa fa-pause"></span>
+              </button>
+              <button class="btn btn-danger btn-sm" id="carousel-play">
+                <span class="fa fa-play"></span>
+              </button>
+            </div>
           </div>
+          
         </div>
       </div>
       <!-- ///////////////                        Карусель сайта                     \\\\\\\\\\\\\\\ -->
 
-    <!--  ////////////                        Основная информация на сайте              \\\\\\\\\\\\\ -->
+      <!--  ////////////                        Основная информация на сайте              \\\\\\\\\\\\\ -->
       <div class="row row-container align-self-center">
         <div class="media">
-          <div class="col-12 col-sm-3 order-sm-last col-md-3 ">
+          <div class="col-12 col-sm-3 order-sm-last col-md-3">
             <h3>Our Lipsmacking Culinary Creations</h3>
           </div>
           <img
-            class="d-flex ml-3 img-thumbnail "
+            class="d-flex ml-3 img-thumbnail"
             src="img/uthappizza.png"
             alt="Uthappizza"
           />
-          <div class="media-body ">
+          <div class="media-body">
             <h2 class="mt-0">
               Uthappizza
               <span class="badge badge-danger">HOT</span>
@@ -494,10 +500,8 @@
             </p>
           </div>
         </div>
-    <!--  ////////////                        Основная информация на сайте              \\\\\\\\\\\\\ -->
-
+        <!--  ////////////                        Основная информация на сайте              \\\\\\\\\\\\\ -->
       </div>
-
 
       <!--  /////////////////                               Форма бронирования мест                         \\\\\\\\\\\\\\\\ -->
       <!-- <div class="col-12 col-sm-6 center">
@@ -664,5 +668,16 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#mycarousel").carousel({ interval: 2000 });
+        $("#carousel-pause").click(function () {
+          $("#mycarousel").carousel("pause");
+        });
+        $("#carousel-play").click(function () {
+          $("#mycarousel").carousel("cycle");
+        });
+      });
+    </script>
   </body>
 </html>
